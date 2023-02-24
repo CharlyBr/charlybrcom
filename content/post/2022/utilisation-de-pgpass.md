@@ -6,7 +6,7 @@ tags:
   - "dotfiles"
 categories:
   - "Databases"
-draft: true
+draft: false
 ---
 
 Le fichier `.pgpass` permet de spécifier des mots de passe à utiliser pour des connections à des bases postgresql.

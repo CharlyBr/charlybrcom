@@ -3,7 +3,7 @@ title: Quelle est la version courante de la distribution Linux
 date: 2021-06-06
 categories:
   - "Linux"
-draft: true
+draft: false
 ---
 
 Le fichier `/etc/os-release` permet d'obtenir les informations relatives à la version du système sur lequel vous vous trouvez.
