@@ -1,0 +1,5 @@
+baseurl = "/"
+title = "CharlyBr"
+languageCode = "fr-FR"
+paginate = "10" # Number of posts per page
+theme = "PaperMod"
