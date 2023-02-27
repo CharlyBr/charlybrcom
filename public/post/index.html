@@ -121,6 +121,11 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="/apropos/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -130,6 +135,21 @@
     Posts
   </h1>
 </header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Utiliser la date dans le nom de l&#39;access log
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A une époque, j’utilisais beaucoup le couple Apache/Cronolog pour classer les fichiers de logs http par vhost et par date.
+Par exemple :
+TransferLog &#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/access.log&#34; ErrorLog &#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/errors.log&#34; Utilisant plus souvent Nginx à la place d’Apache, je cherchais une solution pour faire la même chose sur un serveur avec plusieurs vhosts persos.
+Il existe des solutions pour Nginx à base de FIFO mais je cherchais quelque chose de plus simple....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-27 00:00:00 +0000 UTC'>February 27, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Utiliser la date dans le nom de l&#39;access log" href="/post/2023/nginx-timestamp-log-file/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">

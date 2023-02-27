@@ -3,7 +3,7 @@ title: About
 date: 1980-07-19T14:30:00.000Z
 authorbox: false
 sidebar: false
-draft: true
+draft: false
 menu: main
 ---
 

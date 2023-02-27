@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>nginx on CharlyBr</title>
+    <link>/tags/nginx/</link>
+    <description>Recent content in nginx on CharlyBr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utiliser la date dans le nom de l&#39;access log</title>
+      <link>/post/2023/nginx-timestamp-log-file/</link>
+      <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2023/nginx-timestamp-log-file/</guid>
+      <description>A une époque, j&amp;rsquo;utilisais beaucoup le couple Apache/Cronolog pour classer les fichiers de logs http par vhost et par date.
+Par exemple :
+TransferLog &amp;#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/access.log&amp;#34; ErrorLog &amp;#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/errors.log&amp;#34; Utilisant plus souvent Nginx à la place d&amp;rsquo;Apache, je cherchais une solution pour faire la même chose sur un serveur avec plusieurs vhosts persos.
+Il existe des solutions pour Nginx à base de FIFO mais je cherchais quelque chose de plus simple.</description>
+    </item>
+    
+  </channel>
+</rss>

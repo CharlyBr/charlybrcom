@@ -6,7 +6,19 @@
     <description>Recent content on CharlyBr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utiliser la date dans le nom de l&#39;access log</title>
+      <link>/post/2023/nginx-timestamp-log-file/</link>
+      <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2023/nginx-timestamp-log-file/</guid>
+      <description>A une époque, j&amp;rsquo;utilisais beaucoup le couple Apache/Cronolog pour classer les fichiers de logs http par vhost et par date.
+Par exemple :
+TransferLog &amp;#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/access.log&amp;#34; ErrorLog &amp;#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/errors.log&amp;#34; Utilisant plus souvent Nginx à la place d&amp;rsquo;Apache, je cherchais une solution pour faire la même chose sur un serveur avec plusieurs vhosts persos.
+Il existe des solutions pour Nginx à base de FIFO mais je cherchais quelque chose de plus simple.</description>
+    </item>
+    
     <item>
       <title>Utilisation du fichier .pgpass</title>
       <link>/post/2022/utilisation-de-pgpass/</link>
@@ -25,6 +37,16 @@
       <description>Le fichier /etc/os-release permet d&amp;rsquo;obtenir les informations relatives à la version du système sur lequel vous vous trouvez.
 Ce fichier a été introduit par le fameux systemd.
 Exemple de contenu $ cat /etc/os-release NAME=&amp;#34;Ubuntu&amp;#34; VERSION=&amp;#34;20.04.4 LTS (Focal Fossa)&amp;#34; ID=ubuntu ID_LIKE=debian PRETTY_NAME=&amp;#34;Ubuntu 20.04.4 LTS&amp;#34; VERSION_ID=&amp;#34;20.04&amp;#34; HOME_URL=&amp;#34;https://www.ubuntu.com/&amp;#34; SUPPORT_URL=&amp;#34;https://help.ubuntu.com/&amp;#34; BUG_REPORT_URL=&amp;#34;https://bugs.launchpad.net/ubuntu/&amp;#34; PRIVACY_POLICY_URL=&amp;#34;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&amp;#34; VERSION_CODENAME=focal UBUNTU_CODENAME=focal Récupérer la version courante en shell Si vous avez besoin de scripter des actions en fonction de la version courante de l&amp;rsquo;OS, vous pouvez inclure ce fichier dans votre script et afficher ou utiliser le contenu des variables.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/apropos/</link>
+      <pubDate>Sat, 19 Jul 1980 14:30:00 +0000</pubDate>
+      
+      <guid>/apropos/</guid>
+      <description>Ce site est construit avec Hugo et le thème PaperMod.
+Installation du thème Voir https://github.com/adityatelange/hugo-PaperMod/wiki/Installation Installation en tant que submodule git $ git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod mise à jour du thème $ git submodule update --remote --merge Utilisation de Hugo en local $ hugo -D server [...] Web Server is available at //localhost:1313/ (bind address 127.0.0.1) Press Ctrl+C to stop Rendu des fichiers statiques du site $ hugo Start building sites … hugo v0.</description>
     </item>
     
   </channel>

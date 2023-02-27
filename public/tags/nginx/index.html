@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Linux | CharlyBr</title>
+<title>nginx | CharlyBr</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="/categories/linux/">
+<link rel="canonical" href="/tags/nginx/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/categories/linux/index.xml">
+<link rel="alternate" type="application/rss+xml" href="/tags/nginx/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,13 +55,13 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Linux" />
+</noscript><meta property="og:title" content="nginx" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/categories/linux/" />
+<meta property="og:url" content="/tags/nginx/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux"/>
+<meta name="twitter:title" content="nginx"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -117,22 +117,23 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    Linux
+    nginx
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Quelle est la version courante de la distribution Linux
+    <h2>Utiliser la date dans le nom de l&#39;access log
     </h2>
   </header>
   <div class="entry-content">
-    <p>Le fichier /etc/os-release permet d’obtenir les informations relatives à la version du système sur lequel vous vous trouvez.
-Ce fichier a été introduit par le fameux systemd.
-Exemple de contenu $ cat /etc/os-release NAME=&#34;Ubuntu&#34; VERSION=&#34;20.04.4 LTS (Focal Fossa)&#34; ID=ubuntu ID_LIKE=debian PRETTY_NAME=&#34;Ubuntu 20.04.4 LTS&#34; VERSION_ID=&#34;20.04&#34; HOME_URL=&#34;https://www.ubuntu.com/&#34; SUPPORT_URL=&#34;https://help.ubuntu.com/&#34; BUG_REPORT_URL=&#34;https://bugs.launchpad.net/ubuntu/&#34; PRIVACY_POLICY_URL=&#34;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&#34; VERSION_CODENAME=focal UBUNTU_CODENAME=focal Récupérer la version courante en shell Si vous avez besoin de scripter des actions en fonction de la version courante de l’OS, vous pouvez inclure ce fichier dans votre script et afficher ou utiliser le contenu des variables....</p>
+    <p>A une époque, j’utilisais beaucoup le couple Apache/Cronolog pour classer les fichiers de logs http par vhost et par date.
+Par exemple :
+TransferLog &#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/access.log&#34; ErrorLog &#34;|/usr/sbin/cronolog /www/logs/%Y/%m/%d/errors.log&#34; Utilisant plus souvent Nginx à la place d’Apache, je cherchais une solution pour faire la même chose sur un serveur avec plusieurs vhosts persos.
+Il existe des solutions pour Nginx à base de FIFO mais je cherchais quelque chose de plus simple....</p>
   </div>
-  <footer class="entry-footer"><span title='2021-06-06 00:00:00 +0000 UTC'>June 6, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Quelle est la version courante de la distribution Linux" href="/post/2021/version-distribution-linux/"></a>
+  <footer class="entry-footer"><span title='2023-02-27 00:00:00 +0000 UTC'>February 27, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Utiliser la date dans le nom de l&#39;access log" href="/post/2023/nginx-timestamp-log-file/"></a>
 </article>
     </main>
     
